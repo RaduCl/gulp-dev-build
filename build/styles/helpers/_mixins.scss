@@ -1,0 +1,62 @@
+@import "flexbox";
+// /* SASS Mixins */
+
+  @mixin transform($transform) {
+    -webkit-transform: $transform;
+       -moz-transform: $transform;
+        -ms-transform: $transform;
+         -o-transform: $transform;
+            transform: $transform;
+  }
+  @mixin transition($transition) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+  }
+  @mixin transition-duration($duration) {
+    -webkit-transition-duration: $duration;
+       -moz-transition-duration: $duration;
+        -ms-transition-duration: $duration;
+         -o-transition-duration: $duration;
+            transition-duration: $duration;
+  }
+  @mixin transition-timing-function($timing) {
+    -webkit-transition-timing-function: $timing;
+       -moz-transition-timing-function: $timing;
+        -ms-transition-timing-function: $timing;
+         -o-transition-timing-function: $timing;
+            transition-timing-function: $timing;
+  }
+  @mixin animation-fill-mode($mode) {
+    -webkit-animation-fill-mode: $mode;
+    animation-fill-mode: $mode;
+  }
+  @mixin animation-duration($duration) {
+    -webkit-animation-duration: $duration;
+    animation-duration: $duration;
+  }
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+         -o-border-radius: $radius;
+            border-radius: $radius;
+  }
+  @mixin box-shadow($boxshadow) {
+    -webkit-box-shadow: $boxshadow;
+       -moz-box-shadow: $boxshadow;
+        -ms-box-shadow: $boxshadow;
+         -o-box-shadow: $boxshadow;
+            box-shadow: $boxshadow;
+  }
+  @mixin text-shadow($value) {
+    -webkit-text-shadow: $value;
+       -moz-text-shadow: $value;
+        -ms-text-shadow: $value;
+         -o-text-shadow: $value;
+            text-shadow: $value;
+  }
+
+// /* End: SASS Mixins */
