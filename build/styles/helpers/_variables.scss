@@ -1,20 +1,23 @@
-// /* SASS Variables */
+/* SASS Variables */
 
-  // /* Global variables */
-    $main_bg_color: #074665;
-    $main_bg_color_light: #185776;
-    $size: 70px;
-    $offsetAmount: 1.1;
-    $transitionTime: 0.12s;
-    $brand_blue: #074665;
-    $brand_blue_light: #185776;
-    $brand_orange: #f9991e;
-    $white: #ffffff;
-  // /* End: Global variables */
+/* Global variables */
+$white: #ffffff;
+$dark_grey: #303030;
+$light_blue: #67b5c3;
 
-  // /* Login Page Variables */
-    $white: #ffffff;
-    $dark_grey: #303030;
-// /* END Login Page Variables */
+$size: 70px;
+$offsetAmount: 1.1;
+$transitionTime: 0.12s;
+/* End: Global variables */
+
+/* Login Page Variables */
+
+/* END Login Page Variables */
+
+/* Home Page Variables */
+$main_bg_color: #181818;
+$main_bg_color_light: #303030;
+$light_grey: #d6d6d6;
+/* END Home Page Variables */
 
 // /* End: SASS Variables */

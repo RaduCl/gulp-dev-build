@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  .main-container {
+    height: 100%;
+    background-color: red;
+    color: $light_grey;
+    @include flexbox;
+    @include flex-direction(column);
+    .top-nav-header {
+      background-color: $main_bg_color_light;
+      min-height: 75px;
+
+    }
+
+    .app-container {
+      background-color: red;
+      height: 100%;
+      @include flexbox;
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+      @include align-items(stretch);
+      // @include justify-content(flex-start)
+      // @include align-content(stretch);
+
+      .sidebar-menu {
+        background-color: $main_bg_color_light;
+        @include flex(0 1 auto);
+        border-top: 1px solid $light_grey;
+        border-top: 1px solid #444444;
+        width: 80px;
+        // @include align-self(auto);
+        // @include flex-basis(auto);
+      }
+
+      .app-content {
+        background-color: $main_bg_color;
+        @include flex(1 1 auto);
+        // @include align-self(auto);
+        // @include flex-basis(auto);
+      }
+    }
+  }
+}
