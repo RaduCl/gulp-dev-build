@@ -1,3 +1,4 @@
+/* Home page styles */
 html, body {
   height: 100%;
   .main-container {
@@ -6,10 +7,89 @@ html, body {
     color: $light_grey;
     @include flexbox;
     @include flex-direction(column);
+
     .top-nav-header {
       background-color: $main_bg_color_light;
+      @include flexbox;
+      @include flex-direction(row);
+      @include justify-content(space-between);
       min-height: 75px;
+      padding-left: 20px;
 
+      .brand-logo  {
+        @include align-self(center);
+        width: 35px;
+        margin-left: 20%;
+      }
+
+      .user-profile-nav {
+        @include align-self(center);
+        @include flexbox;
+        @include align-items(center);
+
+        .user-menu {
+          position: relative;
+
+          ul.dropdown-menu {
+            left: -140px;
+            top: 53px;
+            border-radius: 0;
+            min-width: 220px;
+
+            &::before {
+              position: absolute;
+              right: 52px;
+              top: -9px;
+              width: 18px;
+              height: 18px;
+              background: $white;
+              @include transform(rotate(45deg));
+              display: block;
+              content: '';
+
+              li {
+                a {
+                  color: red !important;
+                }
+              }
+            }
+
+          }
+
+        }
+
+        p {
+          display: inline-block;
+          margin: 0 20px 0 0;
+        }
+
+        img.user-profile-image {
+          border-radius: 50%;
+          width: 35px;
+          margin-right: 30px;
+        }
+
+        button {
+          @include flexbox;
+          border: 0px;
+          outline: 0px;
+          font-size: 2.3rem;
+
+          &:hover {
+            color: white;
+          }
+        }
+
+        button.multi-search-button {
+          background-color: $light_blue;
+          padding: 26px;
+        }
+
+        button.user-settings-button {
+          margin-right: 30px;
+          background-color: transparent;
+        }
+      }
     }
 
     .app-container {
@@ -41,3 +121,4 @@ html, body {
     }
   }
 }
+/* END Home page styles */
