@@ -17,7 +17,9 @@
     <script src="./js/main.js" type="text/javascript"></script>
   </head>
   <body>
+    <!-- Main Container -->
     <div class="main-container">
+      <!-- Top Nav Header -->
       <div class="top-nav-header">
         <a id="side-nav-toggle" href="#">
           <span></span>
@@ -35,22 +37,183 @@
               <li><a href="#">Sign out</a></li>
             </ul>
           </div>
-          <button class="user-settings-button" type="button" name="user-settings-button">
-            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-          </button>
+          <div class="settings-menu">
+            <button class="user-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="user-settings-button">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Language</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
           <button class="multi-search-button" type="button" name="multi-search-button">
             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
           </button>
         </div>
       </div>
+      <!-- END Top Nav Header -->
+
+      <!-- App Container -->
       <div class="app-container">
+        <!-- Sidebar Menu -->
         <div class="sidebar-menu">
-          <p>test side bar menu</p>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>My Collections
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <ul class="collection-list">
+                    <!-- Collection nav item -->
+                    <li>
+                      <div class="collection-nav-item">
+                        <p>Collection 1</p>
+                        <span>(3 items)</span>
+                        <!-- Collection Menu Component -->
+                        <div class="collection-menu">
+                          <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Upload to this Collection</a></li>
+                            <li><a href="#">Remove Asset</a></li>
+                            <li><a href="#">Request All</a></li>
+                            <li><a href="#">Share Collection</a></li>
+                          </ul>
+                        </div>
+                        <!-- END Collection Menu Component -->
+                      </div>
+                    </li>
+                    <!-- END Collection nav item -->
+                    <!-- Collection nav item -->
+                    <li>
+                      <div class="collection-nav-item">
+                        <p>Collection 1</p>
+                        <span>(3 items)</span>
+                        <!-- Collection Menu Component -->
+                        <div class="collection-menu">
+                          <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Upload to this Collection</a></li>
+                            <li><a href="#">Remove Asset</a></li>
+                            <li><a href="#">Request All</a></li>
+                            <li><a href="#">Share Collection</a></li>
+                          </ul>
+                        </div>
+                        <!-- END Collection Menu Component -->
+                      </div>
+                    </li>
+                    <!-- END Collection nav item -->
+                    <!-- Collection nav item -->
+                    <li>
+                      <div class="collection-nav-item">
+                        <p>Collection 3</p>
+                        <span>(5 items)</span>
+                        <!-- Collection Menu Component -->
+                        <div class="collection-menu">
+                          <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Upload to this Collection</a></li>
+                            <li><a href="#">Remove Asset</a></li>
+                            <li><a href="#">Request All</a></li>
+                            <li><a href="#">Share Collection</a></li>
+                          </ul>
+                        </div>
+                        <!-- END Collection Menu Component -->
+                      </div>
+                    </li>
+                    <!-- END Collection nav item -->
+                    <!-- Collection nav item -->
+                    <li>
+                      <div class="collection-nav-item">
+                        <p>Collection 4</p>
+                        <span>(2 items)</span>
+                        <!-- Collection Menu Component -->
+                        <div class="collection-menu">
+                          <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Upload to this Collection</a></li>
+                            <li><a href="#">Remove Asset</a></li>
+                            <li><a href="#">Request All</a></li>
+                            <li><a href="#">Share Collection</a></li>
+                          </ul>
+                        </div>
+                        <!-- END Collection Menu Component -->
+                      </div>
+                    </li>
+                    <!-- END Collection nav item -->
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>My Assets
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <ul class="collection-list">
+                    <!-- Collection nav item -->
+                    <li>
+                      <div class="collection-nav-item">
+                        <p>Collection 1</p>
+                        <span>(3 items)</span>
+                        <!-- Collection Menu Component -->
+                        <div class="collection-menu">
+                          <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Upload to this Collection</a></li>
+                            <li><a href="#">Remove Asset</a></li>
+                            <li><a href="#">Request All</a></li>
+                            <li><a href="#">Share Collection</a></li>
+                          </ul>
+                        </div>
+                        <!-- END Collection Menu Component -->
+                      </div>
+                    </li>
+                    <!-- END Collection nav item -->
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- END Sidebar Menu -->
+
+        <!-- App Content -->
         <div class="app-content">
           <p>test content</p>
         </div>
+        <!--END App Content -->
       </div>
+      <!--END App Container -->
+
     </div>
+    <!-- END Main Container -->
   </body>
 </html>
