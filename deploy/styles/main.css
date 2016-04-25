@@ -76,12 +76,12 @@ html, body {
         -webkit-align-items: center;
         -moz-align-items: center;
         align-items: center; }
-        html .main-container .top-nav-header .user-profile-nav .user-menu, html .main-container .top-nav-header .user-profile-nav .settings-menu, body .main-container .top-nav-header .user-profile-nav .user-menu, body .main-container .top-nav-header .user-profile-nav .settings-menu {
+        html .main-container .top-nav-header .user-profile-nav .user-menu, html .main-container .top-nav-header .user-profile-nav .settings-menu, html .main-container .top-nav-header .user-profile-nav .search-menu, body .main-container .top-nav-header .user-profile-nav .user-menu, body .main-container .top-nav-header .user-profile-nav .settings-menu, body .main-container .top-nav-header .user-profile-nav .search-menu {
           position: relative; }
-          html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu, html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu {
+          html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu, html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu, html .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu, body .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu {
             border-radius: 0;
             min-width: 180px; }
-            html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu::after, html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu::after, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu::after, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu::after {
+            html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu::after, html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu::after, html .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu::after, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu::after, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu::after, body .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu::after {
               position: absolute;
               right: 25px;
               top: -9px;
@@ -92,7 +92,7 @@ html, body {
               border-bottom: 10px solid #ffffff;
               display: block;
               content: ''; }
-            html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a, html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a {
+            html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a, html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a, html .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu li a, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a, body .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu li a {
               color: #303030; }
         html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu {
           left: -120px;
@@ -100,6 +100,65 @@ html, body {
         html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu {
           left: -128px;
           top: 46px; }
+        html .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu, body .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu {
+          padding: 30px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+          border-radius: 0;
+          left: -225px;
+          width: 300px;
+          background-color: #67b5c3;
+          margin: 0;
+          border: 0; }
+          html .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form, body .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-direction: normal;
+            -webkit-box-orient: vertical;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+            html .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .form-row, body .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .form-row {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -ms-flexbox;
+              display: flex; }
+              html .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .form-row .glyphicon, body .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .form-row .glyphicon {
+                margin-right: 20px;
+                font-size: 2.3rem;
+                color: #303030; }
+              html .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .form-row .inputs-group, body .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .form-row .inputs-group {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-direction: normal;
+                -webkit-box-orient: vertical;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                width: 100%; }
+                html .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .form-row .inputs-group input, body .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .form-row .inputs-group input {
+                  background-color: transparent;
+                  border: 0;
+                  color: white;
+                  margin-bottom: 20px;
+                  border-bottom: 1px solid #898989;
+                  padding: 16px 0; }
+            html .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .submit-search-button, body .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu form .submit-search-button {
+              background-color: transparent;
+              padding: 15px;
+              border: 1px solid #303030;
+              color: #303030; }
         html .main-container .top-nav-header .user-profile-nav p, body .main-container .top-nav-header .user-profile-nav p {
           display: inline-block;
           margin: 0 20px 0 0; }

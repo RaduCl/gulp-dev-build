@@ -27,7 +27,7 @@ html, body {
         @include flexbox;
         @include align-items(center);
 
-        .user-menu, .settings-menu {
+        .user-menu, .settings-menu, .search-menu {
           position: relative;
 
           ul.dropdown-menu {
@@ -68,6 +68,57 @@ html, body {
           ul.dropdown-menu {
             left: -128px;
             top: 46px;
+          }
+        }
+
+        .search-menu {
+          .dropdown-menu {
+            padding: 30px;
+            @include border-radius(0);
+            left: -225px;
+            // top: 53px;
+            width: 300px;
+            background-color: $light-blue;
+            margin: 0;
+            border: 0;
+
+            form {
+              @include flexbox;
+              @include flex-direction(column);
+
+              .form-row {
+                @include flexbox;
+
+                .glyphicon {
+                  margin-right: 20px;
+                  font-size: 2.3rem;
+                  color: $dark-grey;
+                }
+
+                .inputs-group {
+                  @include flexbox;
+                  @include flex-direction(column);
+                  width: 100%;
+
+                  input {
+                    background-color: transparent;
+                    border: 0;
+                    color: lighten($light_grey, 20%);
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid lighten($dark-grey, 35%);
+                    padding: 16px 0;
+                  }
+
+                }
+              }
+
+              .submit-search-button {
+                background-color: transparent;
+                padding: 15px;
+                border: 1px solid $dark-grey;
+                color: $dark-grey;
+              }
+            }
           }
         }
 

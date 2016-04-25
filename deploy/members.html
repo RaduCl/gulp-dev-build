@@ -27,6 +27,8 @@
         <img src="./img/logo-white.png" alt="IDAM logo" class="brand-logo" />
         <div class="user-profile-nav">
           <p>Glenn Lemming</p>
+
+          <!-- User Menu Component -->
           <div class="user-menu">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
               <img class="user-profile-image" src="./img/profile-img.png" alt="user name profile image" />
@@ -37,6 +39,9 @@
               <li><a href="#">Sign out</a></li>
             </ul>
           </div>
+          <!-- END User Menu Component -->
+
+          <!-- Settings Menu Component -->
           <div class="settings-menu">
             <button class="user-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="user-settings-button">
               <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
@@ -47,9 +52,28 @@
               <li><a href="#">Contact us</a></li>
             </ul>
           </div>
-          <button class="multi-search-button" type="button" name="multi-search-button">
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-          </button>
+          <!-- END Settings Menu Component -->
+
+          <!-- Search Menu Component -->
+          <div class="search-menu">
+            <button class="multi-search-button dropdown-toggle" type="button" data-toggle="dropdown" name="multi-search-button">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown-menu">
+              <form class="search-form" action="index.html" method="post">
+                <div class="form-row">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  <div class="inputs-group">
+                    <input type="text" name="search-term" value="" placeholder="Keywords">
+                    <input type="text" name="sku-number" value="" placeholder="SKU number">
+                  </div>
+                </div>
+                <input class="submit-search-button" type="button" name="sku-number" value="Search">
+              </form>
+            </div>
+          </div>
+          <!-- END Search Menu Component -->
+
         </div>
       </div>
       <!-- END Top Nav Header -->
