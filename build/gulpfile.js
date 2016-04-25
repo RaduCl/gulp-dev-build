@@ -5,17 +5,9 @@ var pass = '';
 var path = '';
 
 var gulp =      require('gulp'),
-    gutil =     require('gulp-util'),
     minicss =  require('gulp-minify-css'),
-    concat =    require('gulp-concat'),
-    jade =      require('gulp-jade'),
     sass =      require('gulp-sass'),
-    minihtml =  require('gulp-minify-html'),
-    gmin =      require('gulp-imagemin'),
-    ftp =       require('gulp-ftp'),
-    uglify =    require('gulp-uglify'),
-    watch =     require('gulp-watch'),
-    connect =   require('gulp-connect');
+    watch =     require('gulp-watch');
 
 //Compiles Sass
 gulp.task('styles', function(){
