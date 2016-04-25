@@ -59,5 +59,11 @@
        -o-text-shadow: $value;
           text-shadow: $value;
 }
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
 
 /* End: SASS Mixins */

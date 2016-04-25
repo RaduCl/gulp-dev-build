@@ -49,7 +49,7 @@ html, body {
 
             li {
               a {
-                color: $dark-grey;
+                color: $dark_grey;
               }
             }
 
@@ -60,7 +60,7 @@ html, body {
         .user-menu {
           ul.dropdown-menu {
             left: -120px;
-            top: 53px;
+            top: 52px;
           }
         }
 
@@ -75,10 +75,11 @@ html, body {
           .dropdown-menu {
             padding: 30px;
             @include border-radius(0);
+            @include box-shadow(none);
             left: -225px;
             // top: 53px;
             width: 300px;
-            background-color: $light-blue;
+            background-color: $light_blue;
             margin: 0;
             border: 0;
 
@@ -88,11 +89,13 @@ html, body {
 
               .form-row {
                 @include flexbox;
+                margin-bottom: 25px;
 
                 .glyphicon {
                   margin-right: 20px;
                   font-size: 2.3rem;
-                  color: $dark-grey;
+                  color: $dark_grey;
+                  padding-top: 16px;
                 }
 
                 .inputs-group {
@@ -103,11 +106,16 @@ html, body {
                   input {
                     background-color: transparent;
                     border: 0;
+                    outline: 0;
                     color: lighten($light_grey, 20%);
                     margin-bottom: 20px;
-                    border-bottom: 1px solid lighten($dark-grey, 35%);
+                    border-bottom: 1px solid $dark_grey;
                     padding: 16px 0;
                   }
+
+                  @include placeholder{
+                    color: $light_grey;
+                  };
 
                 }
               }
@@ -115,7 +123,7 @@ html, body {
               .submit-search-button {
                 background-color: transparent;
                 padding: 15px;
-                border: 1px solid $dark-grey;
+                border: 1px solid $dark_grey;
                 color: $dark-grey;
               }
             }
@@ -169,7 +177,7 @@ html, body {
 
       .sidebar-menu {
         background-color: $main_bg_color_light;
-        border-top: 1px solid lighten($dark-grey, 8%);
+        border-top: 1px solid lighten($dark_grey, 8%);
         width: 250px;
         font-size: 12px;
         // position: absolute;
@@ -209,6 +217,7 @@ html, body {
                   display: flex;
                   @include justify-content(space-between);
                   @include align-items(center);
+                  margin-bottom: 5px;
 
                   p {
                     margin: 0;
@@ -232,7 +241,7 @@ html, body {
                 position: relative;
                 .dropdown-menu {
                   top: 0;
-                  left: 30px;
+                  left: 27px;
                   @include border-radius(0);
                 }
               }
@@ -244,6 +253,7 @@ html, body {
       .app-content {
         background-color: $main_bg_color;
         @include flex(1 1 auto);
+        overflow: scroll;
         // @include align-self(auto);
         // @include flex-basis(auto);
       }
