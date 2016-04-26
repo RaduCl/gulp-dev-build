@@ -1,4 +1,45 @@
+/* General styles */
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: #181818;
 }
+
+#side-nav-toggle {
+  @include align-self(center);
+  cursor: pointer; padding: 10px 20px 15px 0px;
+
+  span, span:before, span:after {
+    @include transition(all 200ms ease-in-out);
+    cursor: pointer;
+    height: 2px;
+    width: 20px;
+    background: $light_grey;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+
+  span:before {
+    top: -7px;
+  }
+
+  span:after {
+    bottom: -7px;
+  }
+
+  &.active {
+    span {
+      background-color: transparent;
+      &:before, &:after {
+        top: 0;
+      }
+      &:before {
+        @include transform(rotate(45deg));
+      }
+      &:after {
+        @include transform(rotate(-45deg));
+      }
+    }
+  }
+}
+/* END General styles */

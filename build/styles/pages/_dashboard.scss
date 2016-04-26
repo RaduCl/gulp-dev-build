@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,800italic,800);
-body.dashboard {
+.dashboard {
+  padding: 20px;
 
   #page-content-wrapper{
 
@@ -229,7 +230,7 @@ body.dashboard {
           }
 
           h3{
-            font-size: 14px;
+            font-size: 15px;
           }
 
         }
