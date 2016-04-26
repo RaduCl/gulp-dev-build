@@ -6,9 +6,7 @@ var path = '';
 
 var gulp =      require('gulp');
 var watch =     require('gulp-watch');
-var concat =    require('gulp-concat');
 var sass =      require('gulp-sass');
-var uglify =    require('gulp-uglify');
 
 //Compiles Sass
 gulp.task('styles', function(){
