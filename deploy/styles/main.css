@@ -175,6 +175,17 @@ html, body {
               padding: 15px;
               border: 1px solid #303030;
               color: #303030; }
+          html .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu .advanced-search-button, body .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu .advanced-search-button {
+            display: inline;
+            padding: 0;
+            background-color: transparent;
+            font-size: 1.5rem;
+            color: #303030;
+            margin-top: 30px;
+            border: 0px;
+            outline: 0px; }
+            html .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu .advanced-search-button img, body .main-container .top-nav-header .user-profile-nav .search-menu .dropdown-menu .advanced-search-button img {
+              margin-right: 12px; }
         html .main-container .top-nav-header .user-profile-nav p, body .main-container .top-nav-header .user-profile-nav p {
           display: inline-block;
           margin: 0 20px 0 0; }

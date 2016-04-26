@@ -127,6 +127,20 @@ html, body {
                 color: $dark-grey;
               }
             }
+
+            .advanced-search-button {
+              display: inline;
+              padding: 0;
+              background-color: transparent;
+              font-size: 1.5rem;
+              color: $dark_grey;
+              margin-top: 30px;
+              border: 0px;
+              outline: 0px;
+              img {
+                margin-right: 12px;
+              }
+            }
           }
         }
 
