@@ -220,7 +220,7 @@ html, body {
               font-size: 1.1em;
 
               .glyphicon {
-                margin-right: 27px;
+                margin-right: 28px;
               }
             }
 
@@ -272,7 +272,7 @@ html, body {
 
       .app-content {
         background-color: $main_bg_color;
-        @include flex(1 1 auto);
+        // @include flex(1 1 auto);
         overflow-y: scroll;
         width: 100%;
         // @include align-self(auto);

@@ -27,8 +27,8 @@ body.background-login {
     }
 
     .profile-img{
-        width: 90px;
-        margin: 0 auto 10px;
+        width: 130px;
+        margin: 10px auto;
         display: block;
     }
 
@@ -92,6 +92,10 @@ body.background-login {
 
       .form-login-footer {
         margin-top: 25px;
+        img {
+          width: 30px;
+          margin: 0 0 2px;
+        }
       }
     }
   }

@@ -259,7 +259,7 @@ html, body {
             html .main-container .app-container .sidebar-menu .panel-group .panel .panel-title, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-title {
               font-size: 1.1em; }
               html .main-container .app-container .sidebar-menu .panel-group .panel .panel-title .glyphicon, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-title .glyphicon {
-                margin-right: 27px; }
+                margin-right: 28px; }
             html .main-container .app-container .sidebar-menu .panel-group .panel .panel-body, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-body {
               border-top: 0;
               font-size: 0.9em;
@@ -302,12 +302,6 @@ html, body {
                   border-radius: 0; }
       html .main-container .app-container .app-content, body .main-container .app-container .app-content {
         background-color: #181818;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1 1 auto;
-        -moz-box-flex: 1;
-        -moz-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
         overflow-y: scroll;
         width: 100%; }
 
@@ -339,8 +333,8 @@ body.background-login {
     body.background-login .account-wall-container a {
       color: #ffffff; }
     body.background-login .account-wall-container .profile-img {
-      width: 90px;
-      margin: 0 auto 10px;
+      width: 130px;
+      margin: 10px auto;
       display: block; }
     body.background-login .account-wall-container .form-login {
       color: #696969;
@@ -387,6 +381,9 @@ body.background-login {
         font-size: 1.5rem; }
       body.background-login .account-wall-container .form-login .form-login-footer {
         margin-top: 25px; }
+        body.background-login .account-wall-container .form-login .form-login-footer img {
+          width: 30px;
+          margin: 0 0 2px; }
 
 .dashboard {
   padding: 20px; }
