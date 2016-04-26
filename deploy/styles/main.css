@@ -239,8 +239,14 @@ html, body {
         border-top: 1px solid #444444;
         width: 250px;
         font-size: 12px; }
+        html .main-container .app-container .sidebar-menu.closed, body .main-container .app-container .sidebar-menu.closed {
+          position: relative;
+          overflow: hidden;
+          width: 74px; }
         html .main-container .app-container .sidebar-menu .panel-group, body .main-container .app-container .sidebar-menu .panel-group {
-          margin-left: 15px; }
+          margin-left: 15px;
+          position: absolute;
+          width: 200px; }
           html .main-container .app-container .sidebar-menu .panel-group .panel, body .main-container .app-container .sidebar-menu .panel-group .panel {
             background-color: transparent;
             border: 0;
@@ -253,7 +259,7 @@ html, body {
             html .main-container .app-container .sidebar-menu .panel-group .panel .panel-title, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-title {
               font-size: 1.1em; }
               html .main-container .app-container .sidebar-menu .panel-group .panel .panel-title .glyphicon, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-title .glyphicon {
-                margin-right: 12px; }
+                margin-right: 27px; }
             html .main-container .app-container .sidebar-menu .panel-group .panel .panel-body, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-body {
               border-top: 0;
               font-size: 0.9em;
@@ -302,7 +308,8 @@ html, body {
         -moz-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
-        overflow-y: scroll; }
+        overflow-y: scroll;
+        width: 100%; }
 
 /* END Home page styles */
 body.background-login {
