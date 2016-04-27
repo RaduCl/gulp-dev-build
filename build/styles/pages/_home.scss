@@ -14,7 +14,7 @@ html, body {
       @include flex-direction(row);
       @include justify-content(space-between);
       min-height: 75px;
-      padding-left: 30px;
+      padding-left: 26px;
 
       .brand-logo  {
         @include align-self(center);
@@ -48,8 +48,15 @@ html, body {
             }
 
             li {
+
               a {
+                padding: 15px;
                 color: $dark_grey;
+                @include flexbox;
+
+                svg, img {
+                  margin-right: 12px;
+                }
               }
             }
 
@@ -206,7 +213,7 @@ html, body {
 
         // bootstrap accordion reset styles
         .panel-group {
-          margin-left: 15px;
+          margin-left: 12px;
           position: absolute;
           width: 200px;
 
@@ -218,8 +225,14 @@ html, body {
 
             .panel-title {
               font-size: 1.1em;
+              opacity: 0.6;
 
-              .glyphicon {
+              &:hover {
+                opacity: 1;
+              }
+
+
+              .glyphicon, img {
                 margin-right: 28px;
               }
             }

@@ -53,7 +53,7 @@ html, body {
       -moz-justify-content: space-between;
       justify-content: space-between;
       min-height: 75px;
-      padding-left: 30px; }
+      padding-left: 26px; }
       html .main-container .top-nav-header .brand-logo, body .main-container .top-nav-header .brand-logo {
         -webkit-align-self: center;
         -moz-align-self: center;
@@ -93,7 +93,15 @@ html, body {
               display: block;
               content: ''; }
             html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a, html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a, html .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu li a, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a, body .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu li a {
-              color: #303030; }
+              padding: 15px;
+              color: #303030;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -ms-flexbox;
+              display: flex; }
+              html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a svg, html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a img, html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a svg, html .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a img, html .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu li a svg, html .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu li a img, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a svg, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu li a img, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a svg, body .main-container .top-nav-header .user-profile-nav .settings-menu ul.dropdown-menu li a img, body .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu li a svg, body .main-container .top-nav-header .user-profile-nav .search-menu ul.dropdown-menu li a img {
+                margin-right: 12px; }
         html .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu, body .main-container .top-nav-header .user-profile-nav .user-menu ul.dropdown-menu {
           left: -120px;
           top: 52px; }
@@ -244,7 +252,7 @@ html, body {
           overflow: hidden;
           width: 74px; }
         html .main-container .app-container .sidebar-menu .panel-group, body .main-container .app-container .sidebar-menu .panel-group {
-          margin-left: 15px;
+          margin-left: 12px;
           position: absolute;
           width: 200px; }
           html .main-container .app-container .sidebar-menu .panel-group .panel, body .main-container .app-container .sidebar-menu .panel-group .panel {
@@ -257,8 +265,11 @@ html, body {
             -o-box-shadow: none;
             box-shadow: none; }
             html .main-container .app-container .sidebar-menu .panel-group .panel .panel-title, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-title {
-              font-size: 1.1em; }
-              html .main-container .app-container .sidebar-menu .panel-group .panel .panel-title .glyphicon, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-title .glyphicon {
+              font-size: 1.1em;
+              opacity: 0.6; }
+              html .main-container .app-container .sidebar-menu .panel-group .panel .panel-title:hover, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-title:hover {
+                opacity: 1; }
+              html .main-container .app-container .sidebar-menu .panel-group .panel .panel-title .glyphicon, html .main-container .app-container .sidebar-menu .panel-group .panel .panel-title img, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-title .glyphicon, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-title img {
                 margin-right: 28px; }
             html .main-container .app-container .sidebar-menu .panel-group .panel .panel-body, body .main-container .app-container .sidebar-menu .panel-group .panel .panel-body {
               border-top: 0;
