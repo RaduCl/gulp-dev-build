@@ -1,0 +1,7 @@
+<svg class="language-icon" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 21.024246 20.976169">
+  <g clip-path="url(#a)" transform="matrix(1.1659 0 0 -1.12583 0 20.976)">
+    <path d="M14.69 15.19V6.275C14.69 3.14 12.15.6 9.018.6 5.883.6 3.342 3.14 3.342 6.274v8.917" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+    <path d="M9.017 9.858V5.775" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+    <path d="M14.933 13.032c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5H3.1c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  </g>
+</svg>

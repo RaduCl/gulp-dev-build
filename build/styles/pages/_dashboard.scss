@@ -1,24 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,800italic,800);
 .dashboard {
   padding: 35px;
 
   .app-content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
 
     .item{
-      float: left;
-      width: 484px;
+      width:33%;
+      display: flex;
+      flex-wrap: wrap;
 
       @media screen and (max-width: 767px) {
-          width: 244px;
+          width: 50%;
+      }
+
+      @media screen and (max-width: 1208px) {
+          width: 50%;
       }
 
       .collection-container{
         cursor: pointer;
-        float: left;
+        width: 100%;
         margin: 2px;
         position: relative;
 
 
         .image-container{
+          width: 100%;
           background-position: center center;
           background-size: cover;
         }
@@ -38,7 +47,7 @@
           @media screen and (max-width: 767px) {
             padding: 0 8px;
           }
-          
+
           > span{
             float: left;
           }
@@ -93,10 +102,11 @@
       }
 
       .collection-container-small{
+        width: $calc50;
 
         .image-container{
           height: $small_image_height;
-          width: $small_image_width;
+          width: 100%;
         }
 
         .item-count-container{
@@ -117,7 +127,8 @@
 
         .image-container{
           height: $big_image_height;
-          width: $big_image_width;
+          // width: $big_image_width;
+          width: 100%;
         }
 
         .item-count-container{
@@ -175,7 +186,8 @@
         display: block;
         height: $small_image_height;
         padding: 30px 23px;
-        width: $small_image_width;
+        // width: $small_image_width;
+        width: $calc50;
 
         a{
           color: #303030;
@@ -207,7 +219,8 @@
 
           .image-container{
             height: 86px;
-            width: 118px;
+            // width: 118px;
+            width: 100%;
           }
         }
 
@@ -215,14 +228,16 @@
 
           .image-container{
             height: 177px;
-            width: 240px;
+            // width: 240px;
+            width: 100%;
           }
         }
 
         .first {
           height: 86px;
           padding: 25px 10px 10px;
-          width: 118px;
+          // width: 118px;
+          width: calc50;
 
           p {
             display: none;
