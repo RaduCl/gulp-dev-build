@@ -1,0 +1,246 @@
+.collection{
+  padding: 35px;
+
+  .app-content-wrapper{
+
+    .filter-container{
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      > div {
+        padding: 0 5px;
+
+        @media screen and (max-width: 1199px) {
+          float: none;
+        }
+
+      }
+
+      .info{
+        h3{
+          color: #fff;
+          font-family: Open Sans;
+          font-size: 32px;
+          font-style: italic;
+          font-weight: 700;
+        }
+
+        .items-count{
+          color: #565656;
+          font-size: 14px;
+          font-style: italic;
+        }
+
+      }
+
+      .filters{
+        line-height: 60px;
+
+        .text{
+          color: #484848;
+        }
+
+        .order{
+          border: 1px solid #eee;
+          border-radius: 25px;
+          padding: 4px 5px;
+
+          .btn {
+            border-radius: 25px !important;
+            line-height: 16px;
+          }
+
+          .btn.active{
+            background: #ffffff;
+            color: #181818;
+          }
+
+          .btn.focus:not(.active), .btn:not(.active):focus, .btn:not(.active):hover{
+            color: #fff;
+          }
+        }
+
+        .sort{
+          display: inline-block;
+          padding: 5px;
+          position: relative;
+          vertical-align: middle;
+
+          > span{
+            margin-right: 5px;
+          }
+          
+          .group{
+            border: 1px solid;
+            border-radius: 25px;
+            display: inline-block;
+            height: 40px;
+            line-height: 38px;
+
+            .arrow-left {
+              border-bottom: 7px solid transparent;
+              border-right: 7px solid #d1d1d1;
+              border-top: 7px solid transparent;
+              height: 0;
+              padding: 0 8px;
+              width: 0;
+            }
+
+            .arrow-right {
+              border-bottom: 7px solid transparent;
+              border-left: 7px solid #d1d1d1;
+              border-top: 7px solid transparent;
+              height: 0;
+              padding: 0 8px;
+              width: 0;
+            }
+
+            .by{
+              display: inline-block;
+              text-align: center;
+
+            }
+
+          }
+
+        }
+
+        .sort.date{
+          margin-right: 17px;
+
+          .by{
+            width: 150px;
+          }
+
+          .group{
+            width: 208px;
+          }
+        }
+
+        .sort.page{
+          margin-right: 13px;
+
+          .by{
+            width: 50px;
+          }
+        }
+
+        .thumb-sort{
+          display: inline-block;
+          margin-right: 30px;
+
+          img{
+            cursor: pointer;
+            filter: brightness(60%);
+            padding: 0 5px;
+          }
+
+          img.active{
+            filter: brightness(100%);
+          }
+
+        }
+
+
+
+
+
+
+      }
+
+
+    }
+
+    .assets-container{
+
+
+      .asset{
+        float: left;
+        height: 172px;
+        margin: 2px;
+        position: relative;
+
+        img{
+          max-height:100%;
+          max-width: 100%;
+        }
+
+        .options{
+          background: #61b5c2 none repeat scroll 0 0;
+          bottom: 0;
+          padding: 7px 8px;
+          position: absolute;
+          right: 0;
+          z-index: 2;
+
+          .controls{
+            display: none;
+
+            a{
+              float: left;
+              margin-right: 5px;
+
+              &:hover{
+                text-decoration: none;
+              }
+
+              &:last-of-type{
+                margin-right: 0;
+              }
+
+              img{
+                display: block;
+              }
+
+            }
+
+          }
+
+        }
+
+        .overlay {
+          background: rgba(97, 181, 194, 0.6) none repeat scroll 0 0;
+          display: none;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          width: 100%;
+
+          h3{
+            font-family: Open Sans;
+            font-size: 1.5vw;
+            font-style: italic;
+            font-weight: 700;
+            margin: 15px;
+          }
+        }
+
+        &:hover {
+
+          .overlay{
+            display: block;
+          }
+
+          .controls{
+            display: block;
+          }
+
+          .plus-sign{
+            display: none;
+          }
+
+
+        }
+
+
+
+      }
+
+    }
+
+  }
+
+}
