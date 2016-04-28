@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Collection | INDG Dam</title>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS lib -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="all" charset="utf-8">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/main.css" media="screen" title="text/css" type="text/css" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
+    <!-- bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Main JS -->
+    <script src="./js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- Main Container -->
+<div class="main-container">
+    <!-- Top Nav Header -->
+    <div class="top-nav-header">
+        <a id="side-nav-toggle" href="#">
+            <span></span>
+        </a>
+        <img src="./img/logo-white.png" alt="IDAM logo" class="brand-logo" />
+        <div class="user-profile-nav">
+            <p>Glenn Lemming</p>
+
+            <!-- User Menu Component -->
+            <div class="user-menu">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                    <img class="user-profile-image" src="./img/profile-img.png" alt="user name profile image" />
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Change picture</a></li>
+                    <li><a href="#">Sign out</a></li>
+                </ul>
+            </div>
+            <!-- END User Menu Component -->
+
+            <!-- Settings Menu Component -->
+            <div class="settings-menu">
+                <button class="user-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="user-settings-button">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Language</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <!-- END Settings Menu Component -->
+
+            <!-- Search Menu Component -->
+            <div class="search-menu">
+                <button class="multi-search-button dropdown-toggle" type="button" data-toggle="dropdown" name="multi-search-button">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <form class="search-form" action="index.html" method="post">
+                        <div class="form-row">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            <div class="inputs-group">
+                                <input type="text" name="search-term" value="" placeholder="Keywords">
+                                <input type="text" name="sku-number" value="" placeholder="SKU number">
+                            </div>
+                        </div>
+                        <input class="submit-search-button" type="button" name="sku-number" value="Search">
+                    </form>
+                    <button class="advanced-search-button" type="button" name="advanced-search-button">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+            <!-- END Search Menu Component -->
+
+        </div>
+    </div>
+    <!-- END Top Nav Header -->
+
+    <!-- App Container -->
+    <div class="app-container">
+        <!-- Sidebar Menu -->
+        <div class="sidebar-menu">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>My Collections
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul class="collection-list">
+                                <!-- Collection nav item -->
+                                <li>
+                                    <div class="collection-nav-item">
+                                        <p>Collection 1</p>
+                                        <span>(3 items)</span>
+                                        <!-- Collection Menu Component -->
+                                        <div class="collection-menu">
+                                            <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                                                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Upload to this Collection</a></li>
+                                                <li><a href="#">Remove Asset</a></li>
+                                                <li><a href="#">Request All</a></li>
+                                                <li><a href="#">Share Collection</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- END Collection Menu Component -->
+                                    </div>
+                                </li>
+                                <!-- END Collection nav item -->
+                                <!-- Collection nav item -->
+                                <li>
+                                    <div class="collection-nav-item">
+                                        <p>Collection 1</p>
+                                        <span>(3 items)</span>
+                                        <!-- Collection Menu Component -->
+                                        <div class="collection-menu">
+                                            <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                                                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Upload to this Collection</a></li>
+                                                <li><a href="#">Remove Asset</a></li>
+                                                <li><a href="#">Request All</a></li>
+                                                <li><a href="#">Share Collection</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- END Collection Menu Component -->
+                                    </div>
+                                </li>
+                                <!-- END Collection nav item -->
+                                <!-- Collection nav item -->
+                                <li>
+                                    <div class="collection-nav-item">
+                                        <p>Collection 3</p>
+                                        <span>(5 items)</span>
+                                        <!-- Collection Menu Component -->
+                                        <div class="collection-menu">
+                                            <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                                                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Upload to this Collection</a></li>
+                                                <li><a href="#">Remove Asset</a></li>
+                                                <li><a href="#">Request All</a></li>
+                                                <li><a href="#">Share Collection</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- END Collection Menu Component -->
+                                    </div>
+                                </li>
+                                <!-- END Collection nav item -->
+                                <!-- Collection nav item -->
+                                <li>
+                                    <div class="collection-nav-item">
+                                        <p>Collection 4</p>
+                                        <span>(2 items)</span>
+                                        <!-- Collection Menu Component -->
+                                        <div class="collection-menu">
+                                            <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                                                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Upload to this Collection</a></li>
+                                                <li><a href="#">Remove Asset</a></li>
+                                                <li><a href="#">Request All</a></li>
+                                                <li><a href="#">Share Collection</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- END Collection Menu Component -->
+                                    </div>
+                                </li>
+                                <!-- END Collection nav item -->
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>My Assets
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <ul class="collection-list">
+                                <!-- Collection nav item -->
+                                <li>
+                                    <div class="collection-nav-item">
+                                        <p>Collection 1</p>
+                                        <span>(3 items)</span>
+                                        <!-- Collection Menu Component -->
+                                        <div class="collection-menu">
+                                            <button class="collection-settings-button dropdown-toggle" data-toggle="dropdown" type="button" name="collection-menu-button">
+                                                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Upload to this Collection</a></li>
+                                                <li><a href="#">Remove Asset</a></li>
+                                                <li><a href="#">Request All</a></li>
+                                                <li><a href="#">Share Collection</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- END Collection Menu Component -->
+                                    </div>
+                                </li>
+                                <!-- END Collection nav item -->
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Sidebar Menu -->
+
+        <!-- App Content -->
+        <div class="app-content collection">
+            <div class="app-content-wrapper">
+                <div class="filter-container">
+                    <div class="info">
+                        <h3>BAS AQUA</h3>
+                        <p class="items-count">(12 items)</p>
+                    </div>
+                    <div class="filters">
+                        <form method="get">
+                            <div class="thumb-sort">
+                                <span class="text">Display</span>
+                                <img class="active" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkI2Mzk0NDgwQkI1MTFFNjhBQjdBRDdDMzRFMDc0RUMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkI2Mzk0NDkwQkI1MTFFNjhBQjdBRDdDMzRFMDc0RUMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2QjYzOTQ0NjBCQjUxMUU2OEFCN0FEN0MzNEUwNzRFQyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2QjYzOTQ0NzBCQjUxMUU2OEFCN0FEN0MzNEUwNzRFQyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PshHH8wAAAAtSURBVHjaYvz06dN/BkzAiMbHUMPEQCYYQhpZsAQEAxGBNdT8OJoAcACAAAMAJSgG9ts02Q0AAAAASUVORK5CYII=">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODY3MDA1QzgwQkI1MTFFNkExQjdBRDEwRjVGNDEzMTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODY3MDA1QzkwQkI1MTFFNkExQjdBRDEwRjVGNDEzMTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NjcwMDVDNjBCQjUxMUU2QTFCN0FEMTBGNUY0MTMxNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NjcwMDVDNzBCQjUxMUU2QTFCN0FEMTBGNUY0MTMxNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhSn6E4AAAAzSURBVHjaYvz06dN/BghgZEAFeMWZGMgELFhMZMBhE4o42TbSXyMLodAbDdUhEaoAAQYAIHwL/en7WuMAAAAASUVORK5CYII=">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzFCRDI2NzcwQkI1MTFFNkExRDVFOEEzRDEzQjgyNDUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzFCRDI2NzgwQkI1MTFFNkExRDVFOEEzRDEzQjgyNDUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDMUJEMjY3NTBCQjUxMUU2QTFENUU4QTNEMTNCODI0NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDMUJEMjY3NjBCQjUxMUU2QTFENUU4QTNEMTNCODI0NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsB0UbAAAAAzSURBVHjaYvz06dN/BghgZECA/wxEAiYGCgELms0MWFxDWxcMvAEsSCE+GgsjNxYAAgwAMuAI+1mYhj4AAAAASUVORK5CYII=">
+                            </div>
+                            <div class="sort page">
+                                <span class="text">Per Page</span>
+                                <div class="group">
+                                    <label class="btn arrow-left"></label>
+                                    <span class="by">120</span>
+                                    <label class="btn arrow-right"></label>
+                                </div>
+                            </div>
+                            <div class="sort date">
+                                <span class="text">Sort By</span>
+                                <div class="group">
+                                    <label class="btn arrow-left"></label>
+                                    <span class="by">Date</span>
+                                    <label class="btn arrow-right"></label>
+                                </div>
+                            </div>
+                            <div class="btn-group order" data-toggle="buttons">
+                                <label class="btn active">
+                                    <input type="radio" name="options" value="asc" autocomplete="off" checked> Asc
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" name="options" value="desc" autocomplete="off"> Desc
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="assets-container">
+
+                    <div class="asset">
+                        
+                        <img src="img/colection2.jpg">
+
+                        <div class="options">
+                            <div class="controls">
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAARCAYAAADtyJ2fAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MkI3ODIwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MkI3ODMwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NDQyQjc4MDBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NDQyQjc4MTBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pl2UtNIAAACKSURBVHjapNJRCoAgDAZgiw5Vx9GXzlQPXbRgbZGybNNlwg+x9mEuOwBwLat3jesXXDD+g6He1eEZA2bHeDpvJdRzkIkFC07oGih7UcIPlEMN+7sWeK/0SRyLSIMci4ii/UdQnllVHkTcSR1YCRWnXUMqtqAcpwtgQS884HwmzIzZDBc89oynAAMAE8L66hhVLVsAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjkwNzIxNjUwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjkwNzIxNjYwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOTA3MjE2MzBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOTA3MjE2NDBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnfLzIYAAAENSURBVHjapNMvaAJhGMdxTw/BIZyIwRnGksUlo3HVZF7VvLS6MmEsrFjtq4IgCyKiZUVMYhoW/8CCuhkcGHz9vucrHLL3xZ0vfMJx7/N7j+fexxJCBM5ZQR81KQzwAsv+Z/E1Wqgjj4j8ghqExsRTnEYHv2jiE5mA2K8r2QuDG8xwjziWeMfFISBpKM7iCyVE0UYNYfcHqABHU5zDHHeI4QNvsA97TAG3WKCABPqoIuTdpwuQp61QxiWGqMA6PkgX8IgnVTjGs+ddBFNTgGzUCK/ooXgU7qga99nWXJYhunjA1nSzLLEfhhh+TryNDr5lrd9ZOHuY/gxY+w2QTWxgo563J/QiqIbJXTsBBgA48Y2Dr8Gb1QAAAABJRU5ErkJggg==" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDlDQUVCMEUwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDlDQUVCMEYwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEOUNBRUIwQzBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEOUNBRUIwRDBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PteRYDAAAAGZSURBVHjapJPLSwJRFMbv5KMXEZYW5iJa1zqkhKhdEtW+RcuEFrWKoHWrFlFtIoj+gYQ2mS0iJANpbW3DSAccU0pJROv2HbrK9THTVAd+zJ1z7v0498w3CuecmY1AKDppUZSz6RGPc9ztZH2d7SxbLLE7NcOuH5OZD84XGQmaYeX8ZnD14jYdT2d5q6A81duY+diYGna7Rl0OuePamvJU/43grNczYLiB6lb5ADgG7labu+025uiwN3VWXR/6fd91aU4p4DOYYfzptVA3N+Tq3qlOV+YC6ixqcKNwLJk2vHIsqTESVARybIO8eFZjJ5JQtYdMrpaga1aD8pFESlMkH3JJuARoYAXQI83LJ3zY7x1yMQd8mIMPYymNfPhCPtQTpM7WwB7YajA3jWYd+Lts1rH3cuUe6xDYRccqa/CnkbknQBj0SrmmM8yoKDED8mLPFbD/R3ABFMElmBPrILD8RXAJlMGp1NU8qIAjPUG9GQYAPhw/Ed3ItWXw+VOH8p+yKQ7sA0VnFAfgzUjQD1RuPp7FmTrBLwEGANHZssceccnZAAAAAElFTkSuQmCC" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUZGQTdGQTcwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUZGQTdGQTgwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRkZBN0ZBNTBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRkZBN0ZBNjBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0vKLAAAAECSURBVHjaYvj//z8DCdgGiC8DsThMjImBNHAUiI8A8X4gFgcJMIJMAQJBNIU/gPg7DkMYgXgaENsDsSMLkNgDxM5oig6AJNHEzIHYFYg1gVgEiNVAepmgmoWgJsMwsmYdID4JxBuAWBaIjwPxIajcOlBAgAA/jkAzB+IPQFwNxGxQMSUgfgjEzWDv4zEApOEeEGciiUkiayZkQAoQH0cTkwfiDGQxfAasA+J0QmkDXzrQAOKrhBIGPgNACeUFFvFnQMxNjAGgxPUFi7gkELMQY4ArDhegJsv/kLQsAMQficwPKOpJzUwYgAVqojCRhjFiM2AtEN/BJokDgLLyJxgHIMAAbAQegmzowoEAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAYAAAACCvahAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDY0QzEyQTYwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDY0QzEyQTcwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNjRDMTJBNDBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNjRDMTJBNTBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlUQ2t0AAACtSURBVHjaYvz//z8DuYCJgQIA0vwCiP8j4UU41C5CU/eS4T8ClAOxEhALgLyCBQtA5cthGmCam4H4BxCH4NAIwyFQdc3ImnWBOJyAATCNYVD1YMGFQCwMZeMyAMT/DpVngKpfjM2GcKhCISSFIH4EulpGHPEsDMRv8fDBgJEWiUSYAB+n5nAgfgLEQkgaQfwIDJWUhjZF8UxxCiM7bT/7jwoW49C8GE3dc4AAAwC0og1rje962AAAAABJRU5ErkJggg==" />
+                                </a>
+                            </div>
+                            <span class="plus-sign">+</span>
+                        </div>
+                        <div class="overlay">
+                            <h3>FC6400_APS_A1 vacuum cleaner 3000</h3>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="asset">
+
+                        <img src="img/colection3.jpg">
+                        <div class="options">
+                            <div class="controls">
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAARCAYAAADtyJ2fAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MkI3ODIwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MkI3ODMwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NDQyQjc4MDBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NDQyQjc4MTBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pl2UtNIAAACKSURBVHjapNJRCoAgDAZgiw5Vx9GXzlQPXbRgbZGybNNlwg+x9mEuOwBwLat3jesXXDD+g6He1eEZA2bHeDpvJdRzkIkFC07oGih7UcIPlEMN+7sWeK/0SRyLSIMci4ii/UdQnllVHkTcSR1YCRWnXUMqtqAcpwtgQS884HwmzIzZDBc89oynAAMAE8L66hhVLVsAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjkwNzIxNjUwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjkwNzIxNjYwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOTA3MjE2MzBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOTA3MjE2NDBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnfLzIYAAAENSURBVHjapNMvaAJhGMdxTw/BIZyIwRnGksUlo3HVZF7VvLS6MmEsrFjtq4IgCyKiZUVMYhoW/8CCuhkcGHz9vucrHLL3xZ0vfMJx7/N7j+fexxJCBM5ZQR81KQzwAsv+Z/E1Wqgjj4j8ghqExsRTnEYHv2jiE5mA2K8r2QuDG8xwjziWeMfFISBpKM7iCyVE0UYNYfcHqABHU5zDHHeI4QNvsA97TAG3WKCABPqoIuTdpwuQp61QxiWGqMA6PkgX8IgnVTjGs+ddBFNTgGzUCK/ooXgU7qga99nWXJYhunjA1nSzLLEfhhh+TryNDr5lrd9ZOHuY/gxY+w2QTWxgo563J/QiqIbJXTsBBgA48Y2Dr8Gb1QAAAABJRU5ErkJggg==" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDlDQUVCMEUwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDlDQUVCMEYwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEOUNBRUIwQzBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEOUNBRUIwRDBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PteRYDAAAAGZSURBVHjapJPLSwJRFMbv5KMXEZYW5iJa1zqkhKhdEtW+RcuEFrWKoHWrFlFtIoj+gYQ2mS0iJANpbW3DSAccU0pJROv2HbrK9THTVAd+zJ1z7v0498w3CuecmY1AKDppUZSz6RGPc9ztZH2d7SxbLLE7NcOuH5OZD84XGQmaYeX8ZnD14jYdT2d5q6A81duY+diYGna7Rl0OuePamvJU/43grNczYLiB6lb5ADgG7labu+025uiwN3VWXR/6fd91aU4p4DOYYfzptVA3N+Tq3qlOV+YC6ixqcKNwLJk2vHIsqTESVARybIO8eFZjJ5JQtYdMrpaga1aD8pFESlMkH3JJuARoYAXQI83LJ3zY7x1yMQd8mIMPYymNfPhCPtQTpM7WwB7YajA3jWYd+Lts1rH3cuUe6xDYRccqa/CnkbknQBj0SrmmM8yoKDED8mLPFbD/R3ABFMElmBPrILD8RXAJlMGp1NU8qIAjPUG9GQYAPhw/Ed3ItWXw+VOH8p+yKQ7sA0VnFAfgzUjQD1RuPp7FmTrBLwEGANHZssceccnZAAAAAElFTkSuQmCC" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUZGQTdGQTcwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUZGQTdGQTgwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRkZBN0ZBNTBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRkZBN0ZBNjBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0vKLAAAAECSURBVHjaYvj//z8DCdgGiC8DsThMjImBNHAUiI8A8X4gFgcJMIJMAQJBNIU/gPg7DkMYgXgaENsDsSMLkNgDxM5oig6AJNHEzIHYFYg1gVgEiNVAepmgmoWgJsMwsmYdID4JxBuAWBaIjwPxIajcOlBAgAA/jkAzB+IPQFwNxGxQMSUgfgjEzWDv4zEApOEeEGciiUkiayZkQAoQH0cTkwfiDGQxfAasA+J0QmkDXzrQAOKrhBIGPgNACeUFFvFnQMxNjAGgxPUFi7gkELMQY4ArDhegJsv/kLQsAMQficwPKOpJzUwYgAVqojCRhjFiM2AtEN/BJokDgLLyJxgHIMAAbAQegmzowoEAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAYAAAACCvahAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDY0QzEyQTYwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDY0QzEyQTcwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNjRDMTJBNDBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNjRDMTJBNTBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlUQ2t0AAACtSURBVHjaYvz//z8DuYCJgQIA0vwCiP8j4UU41C5CU/eS4T8ClAOxEhALgLyCBQtA5cthGmCam4H4BxCH4NAIwyFQdc3ImnWBOJyAATCNYVD1YMGFQCwMZeMyAMT/DpVngKpfjM2GcKhCISSFIH4EulpGHPEsDMRv8fDBgJEWiUSYAB+n5nAgfgLEQkgaQfwIDJWUhjZF8UxxCiM7bT/7jwoW49C8GE3dc4AAAwC0og1rje962AAAAABJRU5ErkJggg==" />
+                                </a>
+                            </div>
+                            <span class="plus-sign">+</span>
+                        </div>
+                        <div class="overlay">
+                            <h3>FC6400_APS_A1 vacuum cleaner 3000</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="asset">
+
+                        <img src="img/colection1.jpg">
+                        <div class="options">
+                            <div class="controls">
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAARCAYAAADtyJ2fAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MkI3ODIwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MkI3ODMwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NDQyQjc4MDBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NDQyQjc4MTBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pl2UtNIAAACKSURBVHjapNJRCoAgDAZgiw5Vx9GXzlQPXbRgbZGybNNlwg+x9mEuOwBwLat3jesXXDD+g6He1eEZA2bHeDpvJdRzkIkFC07oGih7UcIPlEMN+7sWeK/0SRyLSIMci4ii/UdQnllVHkTcSR1YCRWnXUMqtqAcpwtgQS884HwmzIzZDBc89oynAAMAE8L66hhVLVsAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjkwNzIxNjUwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjkwNzIxNjYwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOTA3MjE2MzBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOTA3MjE2NDBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnfLzIYAAAENSURBVHjapNMvaAJhGMdxTw/BIZyIwRnGksUlo3HVZF7VvLS6MmEsrFjtq4IgCyKiZUVMYhoW/8CCuhkcGHz9vucrHLL3xZ0vfMJx7/N7j+fexxJCBM5ZQR81KQzwAsv+Z/E1Wqgjj4j8ghqExsRTnEYHv2jiE5mA2K8r2QuDG8xwjziWeMfFISBpKM7iCyVE0UYNYfcHqABHU5zDHHeI4QNvsA97TAG3WKCABPqoIuTdpwuQp61QxiWGqMA6PkgX8IgnVTjGs+ddBFNTgGzUCK/ooXgU7qga99nWXJYhunjA1nSzLLEfhhh+TryNDr5lrd9ZOHuY/gxY+w2QTWxgo563J/QiqIbJXTsBBgA48Y2Dr8Gb1QAAAABJRU5ErkJggg==" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDlDQUVCMEUwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDlDQUVCMEYwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEOUNBRUIwQzBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEOUNBRUIwRDBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PteRYDAAAAGZSURBVHjapJPLSwJRFMbv5KMXEZYW5iJa1zqkhKhdEtW+RcuEFrWKoHWrFlFtIoj+gYQ2mS0iJANpbW3DSAccU0pJROv2HbrK9THTVAd+zJ1z7v0498w3CuecmY1AKDppUZSz6RGPc9ztZH2d7SxbLLE7NcOuH5OZD84XGQmaYeX8ZnD14jYdT2d5q6A81duY+diYGna7Rl0OuePamvJU/43grNczYLiB6lb5ADgG7labu+025uiwN3VWXR/6fd91aU4p4DOYYfzptVA3N+Tq3qlOV+YC6ixqcKNwLJk2vHIsqTESVARybIO8eFZjJ5JQtYdMrpaga1aD8pFESlMkH3JJuARoYAXQI83LJ3zY7x1yMQd8mIMPYymNfPhCPtQTpM7WwB7YajA3jWYd+Lts1rH3cuUe6xDYRccqa/CnkbknQBj0SrmmM8yoKDED8mLPFbD/R3ABFMElmBPrILD8RXAJlMGp1NU8qIAjPUG9GQYAPhw/Ed3ItWXw+VOH8p+yKQ7sA0VnFAfgzUjQD1RuPp7FmTrBLwEGANHZssceccnZAAAAAElFTkSuQmCC" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUZGQTdGQTcwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUZGQTdGQTgwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRkZBN0ZBNTBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRkZBN0ZBNjBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0vKLAAAAECSURBVHjaYvj//z8DCdgGiC8DsThMjImBNHAUiI8A8X4gFgcJMIJMAQJBNIU/gPg7DkMYgXgaENsDsSMLkNgDxM5oig6AJNHEzIHYFYg1gVgEiNVAepmgmoWgJsMwsmYdID4JxBuAWBaIjwPxIajcOlBAgAA/jkAzB+IPQFwNxGxQMSUgfgjEzWDv4zEApOEeEGciiUkiayZkQAoQH0cTkwfiDGQxfAasA+J0QmkDXzrQAOKrhBIGPgNACeUFFvFnQMxNjAGgxPUFi7gkELMQY4ArDhegJsv/kLQsAMQficwPKOpJzUwYgAVqojCRhjFiM2AtEN/BJokDgLLyJxgHIMAAbAQegmzowoEAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAYAAAACCvahAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDY0QzEyQTYwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDY0QzEyQTcwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNjRDMTJBNDBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNjRDMTJBNTBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlUQ2t0AAACtSURBVHjaYvz//z8DuYCJgQIA0vwCiP8j4UU41C5CU/eS4T8ClAOxEhALgLyCBQtA5cthGmCam4H4BxCH4NAIwyFQdc3ImnWBOJyAATCNYVD1YMGFQCwMZeMyAMT/DpVngKpfjM2GcKhCISSFIH4EulpGHPEsDMRv8fDBgJEWiUSYAB+n5nAgfgLEQkgaQfwIDJWUhjZF8UxxCiM7bT/7jwoW49C8GE3dc4AAAwC0og1rje962AAAAABJRU5ErkJggg==" />
+                                </a>
+                            </div>
+                            <span class="plus-sign">+</span>
+                        </div>
+                        <div class="overlay">
+                            <h3>FC6400_APS_A1 vacuum cleaner 3000</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="asset">
+
+                        <img src="img/colection2.jpg">
+
+                        <div class="options">
+                            <div class="controls">
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAARCAYAAADtyJ2fAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MkI3ODIwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MkI3ODMwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NDQyQjc4MDBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NDQyQjc4MTBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pl2UtNIAAACKSURBVHjapNJRCoAgDAZgiw5Vx9GXzlQPXbRgbZGybNNlwg+x9mEuOwBwLat3jesXXDD+g6He1eEZA2bHeDpvJdRzkIkFC07oGih7UcIPlEMN+7sWeK/0SRyLSIMci4ii/UdQnllVHkTcSR1YCRWnXUMqtqAcpwtgQS884HwmzIzZDBc89oynAAMAE8L66hhVLVsAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjkwNzIxNjUwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjkwNzIxNjYwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOTA3MjE2MzBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOTA3MjE2NDBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnfLzIYAAAENSURBVHjapNMvaAJhGMdxTw/BIZyIwRnGksUlo3HVZF7VvLS6MmEsrFjtq4IgCyKiZUVMYhoW/8CCuhkcGHz9vucrHLL3xZ0vfMJx7/N7j+fexxJCBM5ZQR81KQzwAsv+Z/E1Wqgjj4j8ghqExsRTnEYHv2jiE5mA2K8r2QuDG8xwjziWeMfFISBpKM7iCyVE0UYNYfcHqABHU5zDHHeI4QNvsA97TAG3WKCABPqoIuTdpwuQp61QxiWGqMA6PkgX8IgnVTjGs+ddBFNTgGzUCK/ooXgU7qga99nWXJYhunjA1nSzLLEfhhh+TryNDr5lrd9ZOHuY/gxY+w2QTWxgo563J/QiqIbJXTsBBgA48Y2Dr8Gb1QAAAABJRU5ErkJggg==" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDlDQUVCMEUwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDlDQUVCMEYwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEOUNBRUIwQzBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEOUNBRUIwRDBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PteRYDAAAAGZSURBVHjapJPLSwJRFMbv5KMXEZYW5iJa1zqkhKhdEtW+RcuEFrWKoHWrFlFtIoj+gYQ2mS0iJANpbW3DSAccU0pJROv2HbrK9THTVAd+zJ1z7v0498w3CuecmY1AKDppUZSz6RGPc9ztZH2d7SxbLLE7NcOuH5OZD84XGQmaYeX8ZnD14jYdT2d5q6A81duY+diYGna7Rl0OuePamvJU/43grNczYLiB6lb5ADgG7labu+025uiwN3VWXR/6fd91aU4p4DOYYfzptVA3N+Tq3qlOV+YC6ixqcKNwLJk2vHIsqTESVARybIO8eFZjJ5JQtYdMrpaga1aD8pFESlMkH3JJuARoYAXQI83LJ3zY7x1yMQd8mIMPYymNfPhCPtQTpM7WwB7YajA3jWYd+Lts1rH3cuUe6xDYRccqa/CnkbknQBj0SrmmM8yoKDED8mLPFbD/R3ABFMElmBPrILD8RXAJlMGp1NU8qIAjPUG9GQYAPhw/Ed3ItWXw+VOH8p+yKQ7sA0VnFAfgzUjQD1RuPp7FmTrBLwEGANHZssceccnZAAAAAElFTkSuQmCC" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUZGQTdGQTcwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUZGQTdGQTgwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRkZBN0ZBNTBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRkZBN0ZBNjBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0vKLAAAAECSURBVHjaYvj//z8DCdgGiC8DsThMjImBNHAUiI8A8X4gFgcJMIJMAQJBNIU/gPg7DkMYgXgaENsDsSMLkNgDxM5oig6AJNHEzIHYFYg1gVgEiNVAepmgmoWgJsMwsmYdID4JxBuAWBaIjwPxIajcOlBAgAA/jkAzB+IPQFwNxGxQMSUgfgjEzWDv4zEApOEeEGciiUkiayZkQAoQH0cTkwfiDGQxfAasA+J0QmkDXzrQAOKrhBIGPgNACeUFFvFnQMxNjAGgxPUFi7gkELMQY4ArDhegJsv/kLQsAMQficwPKOpJzUwYgAVqojCRhjFiM2AtEN/BJokDgLLyJxgHIMAAbAQegmzowoEAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAYAAAACCvahAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDY0QzEyQTYwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDY0QzEyQTcwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNjRDMTJBNDBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNjRDMTJBNTBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlUQ2t0AAACtSURBVHjaYvz//z8DuYCJgQIA0vwCiP8j4UU41C5CU/eS4T8ClAOxEhALgLyCBQtA5cthGmCam4H4BxCH4NAIwyFQdc3ImnWBOJyAATCNYVD1YMGFQCwMZeMyAMT/DpVngKpfjM2GcKhCISSFIH4EulpGHPEsDMRv8fDBgJEWiUSYAB+n5nAgfgLEQkgaQfwIDJWUhjZF8UxxCiM7bT/7jwoW49C8GE3dc4AAAwC0og1rje962AAAAABJRU5ErkJggg==" />
+                                </a>
+                            </div>
+                            <span class="plus-sign">+</span>
+                        </div>
+                        <div class="overlay">
+                            <h3>FC6400_APS_A1 vacuum cleaner 3000</h3>
+                        </div>
+
+
+                    </div>
+
+                    <div class="asset">
+
+                        <img src="img/colection1.jpg">
+                        <div class="options">
+                            <div class="controls">
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAARCAYAAADtyJ2fAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MkI3ODIwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MkI3ODMwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NDQyQjc4MDBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NDQyQjc4MTBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pl2UtNIAAACKSURBVHjapNJRCoAgDAZgiw5Vx9GXzlQPXbRgbZGybNNlwg+x9mEuOwBwLat3jesXXDD+g6He1eEZA2bHeDpvJdRzkIkFC07oGih7UcIPlEMN+7sWeK/0SRyLSIMci4ii/UdQnllVHkTcSR1YCRWnXUMqtqAcpwtgQS884HwmzIzZDBc89oynAAMAE8L66hhVLVsAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjkwNzIxNjUwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjkwNzIxNjYwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOTA3MjE2MzBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOTA3MjE2NDBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnfLzIYAAAENSURBVHjapNMvaAJhGMdxTw/BIZyIwRnGksUlo3HVZF7VvLS6MmEsrFjtq4IgCyKiZUVMYhoW/8CCuhkcGHz9vucrHLL3xZ0vfMJx7/N7j+fexxJCBM5ZQR81KQzwAsv+Z/E1Wqgjj4j8ghqExsRTnEYHv2jiE5mA2K8r2QuDG8xwjziWeMfFISBpKM7iCyVE0UYNYfcHqABHU5zDHHeI4QNvsA97TAG3WKCABPqoIuTdpwuQp61QxiWGqMA6PkgX8IgnVTjGs+ddBFNTgGzUCK/ooXgU7qga99nWXJYhunjA1nSzLLEfhhh+TryNDr5lrd9ZOHuY/gxY+w2QTWxgo563J/QiqIbJXTsBBgA48Y2Dr8Gb1QAAAABJRU5ErkJggg==" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDlDQUVCMEUwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDlDQUVCMEYwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEOUNBRUIwQzBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEOUNBRUIwRDBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PteRYDAAAAGZSURBVHjapJPLSwJRFMbv5KMXEZYW5iJa1zqkhKhdEtW+RcuEFrWKoHWrFlFtIoj+gYQ2mS0iJANpbW3DSAccU0pJROv2HbrK9THTVAd+zJ1z7v0498w3CuecmY1AKDppUZSz6RGPc9ztZH2d7SxbLLE7NcOuH5OZD84XGQmaYeX8ZnD14jYdT2d5q6A81duY+diYGna7Rl0OuePamvJU/43grNczYLiB6lb5ADgG7labu+025uiwN3VWXR/6fd91aU4p4DOYYfzptVA3N+Tq3qlOV+YC6ixqcKNwLJk2vHIsqTESVARybIO8eFZjJ5JQtYdMrpaga1aD8pFESlMkH3JJuARoYAXQI83LJ3zY7x1yMQd8mIMPYymNfPhCPtQTpM7WwB7YajA3jWYd+Lts1rH3cuUe6xDYRccqa/CnkbknQBj0SrmmM8yoKDED8mLPFbD/R3ABFMElmBPrILD8RXAJlMGp1NU8qIAjPUG9GQYAPhw/Ed3ItWXw+VOH8p+yKQ7sA0VnFAfgzUjQD1RuPp7FmTrBLwEGANHZssceccnZAAAAAElFTkSuQmCC" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUZGQTdGQTcwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUZGQTdGQTgwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRkZBN0ZBNTBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRkZBN0ZBNjBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0vKLAAAAECSURBVHjaYvj//z8DCdgGiC8DsThMjImBNHAUiI8A8X4gFgcJMIJMAQJBNIU/gPg7DkMYgXgaENsDsSMLkNgDxM5oig6AJNHEzIHYFYg1gVgEiNVAepmgmoWgJsMwsmYdID4JxBuAWBaIjwPxIajcOlBAgAA/jkAzB+IPQFwNxGxQMSUgfgjEzWDv4zEApOEeEGciiUkiayZkQAoQH0cTkwfiDGQxfAasA+J0QmkDXzrQAOKrhBIGPgNACeUFFvFnQMxNjAGgxPUFi7gkELMQY4ArDhegJsv/kLQsAMQficwPKOpJzUwYgAVqojCRhjFiM2AtEN/BJokDgLLyJxgHIMAAbAQegmzowoEAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAYAAAACCvahAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDY0QzEyQTYwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDY0QzEyQTcwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNjRDMTJBNDBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNjRDMTJBNTBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlUQ2t0AAACtSURBVHjaYvz//z8DuYCJgQIA0vwCiP8j4UU41C5CU/eS4T8ClAOxEhALgLyCBQtA5cthGmCam4H4BxCH4NAIwyFQdc3ImnWBOJyAATCNYVD1YMGFQCwMZeMyAMT/DpVngKpfjM2GcKhCISSFIH4EulpGHPEsDMRv8fDBgJEWiUSYAB+n5nAgfgLEQkgaQfwIDJWUhjZF8UxxCiM7bT/7jwoW49C8GE3dc4AAAwC0og1rje962AAAAABJRU5ErkJggg==" />
+                                </a>
+                            </div>
+                            <span class="plus-sign">+</span>
+                        </div>
+                        <div class="overlay">
+                            <h3>FC6400_APS_A1 vacuum cleaner 3000</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="asset">
+
+                        <img src="img/colection3.jpg">
+                        <div class="options">
+                            <div class="controls">
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAARCAYAAADtyJ2fAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MkI3ODIwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MkI3ODMwQzY3MTFFNkJBRDZDQkZGNUQ2RDQzNkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NDQyQjc4MDBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NDQyQjc4MTBDNjcxMUU2QkFENkNCRkY1RDZENDM2QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pl2UtNIAAACKSURBVHjapNJRCoAgDAZgiw5Vx9GXzlQPXbRgbZGybNNlwg+x9mEuOwBwLat3jesXXDD+g6He1eEZA2bHeDpvJdRzkIkFC07oGih7UcIPlEMN+7sWeK/0SRyLSIMci4ii/UdQnllVHkTcSR1YCRWnXUMqtqAcpwtgQS884HwmzIzZDBc89oynAAMAE8L66hhVLVsAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjkwNzIxNjUwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjkwNzIxNjYwQzY3MTFFNkJBNkJBMTg0RUYxQzlDMUUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCOTA3MjE2MzBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCOTA3MjE2NDBDNjcxMUU2QkE2QkExODRFRjFDOUMxRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnfLzIYAAAENSURBVHjapNMvaAJhGMdxTw/BIZyIwRnGksUlo3HVZF7VvLS6MmEsrFjtq4IgCyKiZUVMYhoW/8CCuhkcGHz9vucrHLL3xZ0vfMJx7/N7j+fexxJCBM5ZQR81KQzwAsv+Z/E1Wqgjj4j8ghqExsRTnEYHv2jiE5mA2K8r2QuDG8xwjziWeMfFISBpKM7iCyVE0UYNYfcHqABHU5zDHHeI4QNvsA97TAG3WKCABPqoIuTdpwuQp61QxiWGqMA6PkgX8IgnVTjGs+ddBFNTgGzUCK/ooXgU7qga99nWXJYhunjA1nSzLLEfhhh+TryNDr5lrd9ZOHuY/gxY+w2QTWxgo563J/QiqIbJXTsBBgA48Y2Dr8Gb1QAAAABJRU5ErkJggg==" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDlDQUVCMEUwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDlDQUVCMEYwQzY3MTFFNjgzQkU5MDcyQzNDRDJFRjUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEOUNBRUIwQzBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEOUNBRUIwRDBDNjcxMUU2ODNCRTkwNzJDM0NEMkVGNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PteRYDAAAAGZSURBVHjapJPLSwJRFMbv5KMXEZYW5iJa1zqkhKhdEtW+RcuEFrWKoHWrFlFtIoj+gYQ2mS0iJANpbW3DSAccU0pJROv2HbrK9THTVAd+zJ1z7v0498w3CuecmY1AKDppUZSz6RGPc9ztZH2d7SxbLLE7NcOuH5OZD84XGQmaYeX8ZnD14jYdT2d5q6A81duY+diYGna7Rl0OuePamvJU/43grNczYLiB6lb5ADgG7labu+025uiwN3VWXR/6fd91aU4p4DOYYfzptVA3N+Tq3qlOV+YC6ixqcKNwLJk2vHIsqTESVARybIO8eFZjJ5JQtYdMrpaga1aD8pFESlMkH3JJuARoYAXQI83LJ3zY7x1yMQd8mIMPYymNfPhCPtQTpM7WwB7YajA3jWYd+Lts1rH3cuUe6xDYRccqa/CnkbknQBj0SrmmM8yoKDED8mLPFbD/R3ABFMElmBPrILD8RXAJlMGp1NU8qIAjPUG9GQYAPhw/Ed3ItWXw+VOH8p+yKQ7sA0VnFAfgzUjQD1RuPp7FmTrBLwEGANHZssceccnZAAAAAElFTkSuQmCC" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUZGQTdGQTcwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUZGQTdGQTgwQzY3MTFFNkI5NDNENjhDMDJEQThBNDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRkZBN0ZBNTBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRkZBN0ZBNjBDNjcxMUU2Qjk0M0Q2OEMwMkRBOEE0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0vKLAAAAECSURBVHjaYvj//z8DCdgGiC8DsThMjImBNHAUiI8A8X4gFgcJMIJMAQJBNIU/gPg7DkMYgXgaENsDsSMLkNgDxM5oig6AJNHEzIHYFYg1gVgEiNVAepmgmoWgJsMwsmYdID4JxBuAWBaIjwPxIajcOlBAgAA/jkAzB+IPQFwNxGxQMSUgfgjEzWDv4zEApOEeEGciiUkiayZkQAoQH0cTkwfiDGQxfAasA+J0QmkDXzrQAOKrhBIGPgNACeUFFvFnQMxNjAGgxPUFi7gkELMQY4ArDhegJsv/kLQsAMQficwPKOpJzUwYgAVqojCRhjFiM2AtEN/BJokDgLLyJxgHIMAAbAQegmzowoEAAAAASUVORK5CYII=" />
+                                </a>
+                                <a href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAYAAAACCvahAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDY0QzEyQTYwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDY0QzEyQTcwQzY4MTFFNjhDQTNEQTVFRjU0MTAwOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNjRDMTJBNDBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNjRDMTJBNTBDNjgxMUU2OENBM0RBNUVGNTQxMDA5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlUQ2t0AAACtSURBVHjaYvz//z8DuYCJgQIA0vwCiP8j4UU41C5CU/eS4T8ClAOxEhALgLyCBQtA5cthGmCam4H4BxCH4NAIwyFQdc3ImnWBOJyAATCNYVD1YMGFQCwMZeMyAMT/DpVngKpfjM2GcKhCISSFIH4EulpGHPEsDMRv8fDBgJEWiUSYAB+n5nAgfgLEQkgaQfwIDJWUhjZF8UxxCiM7bT/7jwoW49C8GE3dc4AAAwC0og1rje962AAAAABJRU5ErkJggg==" />
+                                </a>
+                            </div>
+                            <span class="plus-sign">+</span>
+                        </div>
+                        <div class="overlay">
+                            <h3>FC6400_APS_A1 vacuum cleaner 3000</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--END App Content -->
+    </div>
+    <!--END App Container -->
+
+</div>
+<!-- END Main Container -->
+</body>
+</html>

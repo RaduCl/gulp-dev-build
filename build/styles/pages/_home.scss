@@ -285,9 +285,9 @@ html, body {
 
       .app-content {
         background-color: $main_bg_color;
-        // @include flex(1 1 auto);
-        overflow-y: scroll;
         width: 100%;
+        @include flex(1 1 auto);
+        overflow-y: auto;
         // @include align-self(auto);
         // @include flex-basis(auto);
       }
