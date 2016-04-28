@@ -1,4 +1,4 @@
-body.background-login {
+.background-login {
   background-image: url("../img/login-background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -6,6 +6,7 @@ body.background-login {
   background-size:cover;
   padding-left: 10px;
   margin-left: -10px;
+  height: 100%;
 
   .account-wall-container {
     width: 400px;

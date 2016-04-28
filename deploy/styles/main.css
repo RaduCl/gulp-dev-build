@@ -317,15 +317,16 @@ html, body {
         width: 100%; }
 
 /* END Home page styles */
-body.background-login {
+.background-login {
   background-image: url("../img/login-background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   padding-left: 10px;
-  margin-left: -10px; }
-  body.background-login .account-wall-container {
+  margin-left: -10px;
+  height: 100%; }
+  .background-login .account-wall-container {
     width: 400px;
     padding: 70px 35px 50px;
     background-color: #303030;
@@ -338,35 +339,35 @@ body.background-login {
     -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
-    body.background-login .account-wall-container h1 {
+    .background-login .account-wall-container h1 {
       color: #fff;
       font-size: 5rem; }
-    body.background-login .account-wall-container a {
+    .background-login .account-wall-container a {
       color: #ffffff; }
-    body.background-login .account-wall-container .profile-img {
+    .background-login .account-wall-container .profile-img {
       width: 130px;
       margin: 10px auto;
       display: block; }
-    body.background-login .account-wall-container .form-login {
+    .background-login .account-wall-container .form-login {
       color: #696969;
       font-size: 12px;
       margin-top: 40px; }
-      body.background-login .account-wall-container .form-login p {
+      .background-login .account-wall-container .form-login p {
         margin-top: 20px; }
-      body.background-login .account-wall-container .form-login .left-icon-input {
+      .background-login .account-wall-container .form-login .left-icon-input {
         position: relative;
         background-color: #dedede;
         display: inline; }
-      body.background-login .account-wall-container .form-login .left-icon-input:before {
+      .background-login .account-wall-container .form-login .left-icon-input:before {
         position: absolute;
         left: 8px;
         top: 23px;
         z-index: 1; }
-      body.background-login .account-wall-container .form-login .left-icon-input-username:before {
+      .background-login .account-wall-container .form-login .left-icon-input-username:before {
         content: url("../img/icon-user.png"); }
-      body.background-login .account-wall-container .form-login .left-icon-input-password:before {
+      .background-login .account-wall-container .form-login .left-icon-input-password:before {
         content: url("../img/icon-password.png"); }
-      body.background-login .account-wall-container .form-login .form-input, body.background-login .account-wall-container .form-login .form-input:focus {
+      .background-login .account-wall-container .form-login .form-input, .background-login .account-wall-container .form-login .form-input:focus {
         border-style: none;
         background-color: #303030 !important;
         border-bottom: 1px solid #6f6f6f;
@@ -380,7 +381,7 @@ body.background-login {
         color: #ffffff;
         background-color: #ffffff;
         background-image: none; }
-      body.background-login .account-wall-container .form-login .btn-login {
+      .background-login .account-wall-container .form-login .btn-login {
         background-color: #67b5c2;
         color: #FFFFFF;
         width: 70%;
@@ -390,9 +391,9 @@ body.background-login {
         line-height: 1.3333333;
         border-radius: 0px;
         font-size: 1.5rem; }
-      body.background-login .account-wall-container .form-login .form-login-footer {
+      .background-login .account-wall-container .form-login .form-login-footer {
         margin-top: 25px; }
-        body.background-login .account-wall-container .form-login .form-login-footer img {
+        .background-login .account-wall-container .form-login .form-login-footer img {
           width: 30px;
           margin: 0 0 2px; }
 
