@@ -3,7 +3,6 @@ html, body {
   height: 100%;
   .main-container {
     height: 100%;
-    background-color: red;
     color: $light_grey;
     @include flexbox;
     @include flex-direction(column);
@@ -187,7 +186,6 @@ html, body {
     }
 
     .app-container {
-      background-color: red;
       height: 100%;
       @include flexbox;
       @include flex-direction(row);
@@ -285,11 +283,11 @@ html, body {
 
       .app-content {
         background-color: $main_bg_color;
-        width: 100%;
         @include flex(1 1 auto);
+        margin-bottom: 75px;
+        padding: 35px;
         overflow-y: auto;
-        // @include align-self(auto);
-        // @include flex-basis(auto);
+        width: 100%;
       }
     }
   }
